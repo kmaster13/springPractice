@@ -1,12 +1,12 @@
-package ru.kmaster.springMVC.controllers;
+package ru.kmaster.springPractice.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.kmaster.springMVC.dao.PersonDAO;
-import ru.kmaster.springMVC.models.Person;
+import ru.kmaster.springPractice.dao.PersonDAO;
+import ru.kmaster.springPractice.models.Person;
 
 import javax.validation.Valid;
 
@@ -59,6 +59,7 @@ public class PeopleController {
         if (bindingResult.hasErrors()) {
             return "people/new";
         }
+
 
         personDAO.update(id, person);
         return "redirect:/people";

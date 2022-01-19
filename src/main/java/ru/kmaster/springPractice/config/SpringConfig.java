@@ -1,4 +1,4 @@
-package ru.kmaster.springMVC.config;
+package ru.kmaster.springPractice.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -13,7 +13,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-@ComponentScan("ru.kmaster.springMVC")
+@ComponentScan("ru.kmaster.springPractice")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
 

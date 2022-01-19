@@ -1,4 +1,4 @@
-package ru.kmaster.springMVC.config;
+package ru.kmaster.springPractice.config;
 
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
